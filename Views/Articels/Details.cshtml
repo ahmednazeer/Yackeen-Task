@@ -1,0 +1,66 @@
+﻿@model Yackeen.Models.Article
+
+@{
+    ViewBag.Title = "Details";
+}
+
+
+<div>
+    
+    <table class="table table-responsive" >
+        <tr>
+            <td class="text-center">@Html.DisplayFor(model => model.Title)</td>
+        </tr>
+        <hr />
+        <tr>
+            <td class="text-success"> @Html.DisplayFor(model => model.Body)</td>
+        </tr>
+        <hr />
+        <tr>
+            <td class="text-right text-danger"> @Html.DisplayFor(model =>  model.PublishingDate)</td>
+        </tr>
+    </table>
+    
+    <hr />
+
+    <!--
+    <dl class="dl-horizontal">
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Body)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Body)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PublishingDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PublishingDate)
+        </dd>
+
+    </dl>
+</div>
+        -->
+<p>
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+<div id="my-comment">
+    @Html.Action("AddComment")
+</div>
+
+<div id="comments">
+    @Html.Action("GetComments")
+</div>

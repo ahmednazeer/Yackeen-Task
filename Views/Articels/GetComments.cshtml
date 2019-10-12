@@ -1,0 +1,46 @@
+﻿@model  IEnumerable<Yackeen.Models.ViewModels.CommentModel>
+
+@foreach (var item in Model)
+{
+    <div class="row">
+        <div class="col-sm-12">
+            <p>@item.CommentBody</p>
+        </div>
+        <div class="col-sm-12">
+            <div class="col-lg-4 col-lg-offset-2 text-danger">BY : @item.CommentOwner</div>
+            <div class="col-lg-3 text-right text-info">At : @item.PublishedAt</div>
+        </div>
+
+    </div>
+}
+
+<!--
+    
+@*
+<div>
+        <dl class="dl-horizontal">
+
+
+            <dt>
+                @Html.DisplayNameFor(model => model.CommentBody)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.CommentBody)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.CommentDate)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.CommentDate)
+            </dd>
+
+        </dl>
+    </div>
+*@  
+-->
+<p>
+    @Html.ActionLink("Back to List", "Index")
+</p>

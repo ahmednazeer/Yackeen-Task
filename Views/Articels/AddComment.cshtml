@@ -1,0 +1,8 @@
+﻿@model Yackeen.Models.ViewModels.CommentModel
+@using (Html.BeginForm("AddComment", "Articels", FormMethod.Post)) {
+    <div class="form-group">
+        @Html.TextBoxFor(m=>m.CommentBody,new  { @class="form-control"})
+        <!-- <input type="text" class="form-control"/> -->
+        <button type="submit">Post</button>
+    </div>
+}
