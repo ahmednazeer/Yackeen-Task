@@ -9,6 +9,7 @@ using Yackeen.Models.ViewModels;
 
 namespace Yackeen.Controllers
 {
+    [HandleError]
     [Authorize]
     public class ArticelsController : Controller
     {
