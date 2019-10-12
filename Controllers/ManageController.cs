@@ -10,6 +10,7 @@ using Yackeen.Models;
 
 namespace Yackeen.Controllers
 {
+    [HandleError]
     [Authorize]
     public class ManageController : Controller
     {
