@@ -14,6 +14,7 @@ using Yackeen.Models.Helpers;
 
 namespace Yackeen.Controllers
 {
+    [HandleError]
     [Authorize]
     public class AccountController : Controller
     {
